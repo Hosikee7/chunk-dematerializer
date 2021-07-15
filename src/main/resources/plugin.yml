@@ -1,0 +1,7 @@
+name: ChunkDematerializer
+version: $version
+main: com.github.monun.chunkdematerializer.plugin.ChunkDematerializerPlugin
+api-version: 1.17
+libraries:
+  - io.github.monun:tap:4.1.1
+  - io.github.monun:kommand:2.2.0
