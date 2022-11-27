@@ -7,7 +7,7 @@ import org.bukkit.Material
 import org.bukkit.plugin.java.JavaPlugin
 
 /**
- * @author Monun
+ * @author Hosikee7
  */
 class ChunkDematerializerPlugin : JavaPlugin() {
     override fun onEnable() {
@@ -31,10 +31,9 @@ class ChunkDematerializerPlugin : JavaPlugin() {
                                             continue@x
                                         }
 
-                                        if (type == Material.CLAY) {
-                                            continue
+                                        if (type == Material.REDSTONE_ORE || type == Material.DEEPSLATE_REDSTONE_ORE) {
+                                            continue@x
                                         }
-                                        if (type == Material.LAPIS_ORE || type == Material.DEEPSLATE_LAPIS_ORE) continue
                                         if (type == Material.LAVA) continue
 
                                         block.setBlockData(Material.AIR.createBlockData(), false)
